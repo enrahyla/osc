@@ -1,4 +1,22 @@
 Osc::Application.routes.draw do
+  resources :feedbacks
+
+
+  resources :create_blogs
+
+
+  resources :messages
+
+
+  resources :rails
+
+
+  resources :blogs
+
+
+  resources :homes
+
+
   resources :products
 
 

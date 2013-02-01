@@ -11,11 +11,54 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130201114858) do
+ActiveRecord::Schema.define(:version => 20130201155518) do
+
+  create_table "blogs", :force => true do |t|
+    t.string   "Title"
+    t.string   "Message"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "create_blogs", :force => true do |t|
+    t.string   "title"
+    t.string   "body"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "feedbacks", :force => true do |t|
+    t.string   "title"
+    t.string   "body"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "homes", :force => true do |t|
+    t.string   "blog"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "messages", :force => true do |t|
+    t.string   "title"
+    t.string   "message"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "products", :force => true do |t|
     t.string   "name"
     t.decimal  "price"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "rails", :force => true do |t|
+    t.string   "g"
+    t.string   "scaffold"
+    t.string   "Message"
+    t.string   "Title"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
