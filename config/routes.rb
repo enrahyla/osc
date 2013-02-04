@@ -1,11 +1,11 @@
 Osc::Application.routes.draw do
+
+  get "feedbacks/about"
+  
   resources :feedbacks
 
 
   resources :create_blogs
-
-
-  resources :messages
 
 
   resources :rails
